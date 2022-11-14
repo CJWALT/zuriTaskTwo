@@ -1,13 +1,467 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;700&display=swap');
+
+:root{ 
+  --bg-gradient: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  --bd-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*{ 
+  margin:0; 
+  padding:0; 
+  box-sizing: border-box;
+}
+
+.container{ 
+  width:90%; 
+  margin:0 auto;  
+  max-width:1240px; 
+}
+img{ 
+  width:100%;
+  height:auto;
+}
+a{ 
+  text-decoration:none;
+}
+.btn{ 
+  background:var(--bg-gradient);
+  padding:15px 27px; 
+  border-radius: var(--bd-radius);
+}
+
+header{ 
+  padding:43px 0;
+  margin-bottom:30px;
+}
+.header--wrap{ 
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header--wrap__logo{ 
+  width:233px;
+}
+
+.nav--btn{
+  
+  display:flex; 
+  justify-content: space-between;
+  flex-direction:row;
+  gap:38px;
+}
+
+ul.nav--links{ 
+  list-style:none;
+  align-self:center;
+}
+
+ul li{ 
+  display:inline; 
+  margin-right:48px;
+}
+
+ul li a.nav--link { 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #434343;
+}
+
+.header--btn{ 
+  padding:14px 0;
+}
+
+a.btn{ 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.menu-icon{ 
+  display:none;
+}
+
+
+main{ 
+  display:flex; 
+  flex-direction: row;
+  gap:75px;
+  margin-bottom:67px;
+}
+.banner{ 
+  align-self:center;
+  max-width:646px;
+  width:646px;
+}
+.banner--heading{
+  font-size:56px; 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #434343;
+  margin-bottom:48px;
+}
+
+span.heading--color{ 
+font-weight: 700;
+text-transform: capitalize;
+font-size: 56px;
+background: linear-gradient(180deg, #A02279 79.31%, rgba(255, 192, 137, 0.6) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.banner--para{ 
+font-family: 'Red Rose';
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+color: #434343;
+margin-bottom:48px;
+}
+
+fieldset{ 
+  border:none;
+  height:54px;
+}
+input{ 
+  width: 390px;
+  height: inherit;
+  background: rgba(247, 247, 247, 0.1);
+  border: 1px solid #A3A3A3;
+  border-radius: 8px 0px 0px 8px;
+  padding-left:15px;
+  }
+input::placeholder{
+  font-family: 'Red Rose';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #B8B8B8;
+}
+button{ 
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+  border-radius: 0px 8px 8px 0px;
+  padding:0 87px;
+  border:none;
+  font-family: 'Red Rose';
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  height:inherit;
+}
+section#sponsorBar{ 
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  
+}
+.sponsor--wrap{ 
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  padding:10px 75px;
+  overflow:hidden;
+}
+.sponsor--wrap img{ 
+  width:222px; 
+  height:50px;
+}
+
+section#placeToStay{ 
+  text-align:center;
+  padding-top:39px;
+}
+.placeToStay--heading{ 
+  margin-bottom:43px;
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+}
+
+.placeToStays{ 
+  display:grid; 
+  grid-template-columns:repeat(4, 1fr);
+  gap:24px;
+  margin-bottom:53px;
+}
+
+article{ 
+  /* width:292px;  */
+  height:372px; 
+  padding:16px;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  border: 1px solid #D7D7D7;
+  border-radius: 15px;
+  position:relative;
+  color: #434343;    
+}
+.heart--icon{ 
+  right: 38px;
+  color: #D7D7D7;
+  font-size: 24px;
+  top: 30px;
+  position: absolute;
+}
+.title--price{ 
+  display:flex; 
+  justify-content: space-between;
+  flex-direction:row; 
+  margin-top:16px; 
+}
+.title--price h6{ 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+}
+.title--price small{ 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+
+}
+
+.distance--vacancy{ 
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:10px;
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom:9px;
+}
+.fav{ 
+  display:flex; 
+  flex-direction: row;
+  align-self: flex-start;
+  gap:8px;
+}
+.star--icon{ 
+  font-size:12px;
+  color: #A02279 ;
+  border-radius: 1px;
+}
+#nft{ 
+  padding:100px 0;
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border: 1px solid #000000;
+}
+.nft--wrap{ 
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 10%;
+}
+.nft--banner{ 
+  align-self:center;
+}
+.nft--banner h3{ 
+  font-family: 'Red Rose';
+  font-weight: 700;
+  font-size: 48px;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom:35px;
+}
+.nft--para{ 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom:55px;
+}
+
+button.btn--nft{ 
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  border-radius: 8px;
+  padding:14px 33px;
+  color:#A02279;
+}
+
+footer{ 
+  padding-top:58px;
+  background:#1D1D1E;
+}
+.footer-wrap{ 
+  display:flex; 
+  flex-direction: row;
+  gap:187px;
+}
+.logo--icons{ 
+  display:flex; 
+  flex-direction: column;
+  gap:59px;
+}
+img.footer-img{ 
+  width:233px;
+}
+.social-icons{ 
+  display:flex; 
+  flex-direction: row;
+  gap:20px; 
+  font-size:20px;
+}
+.social-icons a{ 
+  color:#f7f7f7;
+}
+
+small.copyright{ 
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F7F7F7;
+  margin-bottom:37px;
+}
+.footer--links__wrap{ 
+  display:flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:200px;
+}
+
+h5{ 
+font-family: 'Red Rose', sans-serif;
+font-weight: 700;
+font-size: 18px;
+color: #FFFFFF;
+margin-bottom:15px;
+}
+.footer-links .footer--link{ 
+  font-family: 'Red Rose';
+  font-weight: 400;
+  font-size: 14px;
+  color: #F1F3F9;
+  display:block;
+}
+/* media queries */
+
+@media screen and (max-width:1024px){
+  
+  .nav--btn{ 
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 1px #4b574b;
+    background: #af9696db;
+    animation: navAnime .9s ease-in;
+    }   
+    .show__btn{ 
+      display:flex;
+    }
+
+    @keyframes navAnime{ 
+      0%{ 
+        opacity:0;
+      }
+      100%{ 
+        opacity:1;
+      }
+    }
+
+  .nav--links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+ 
+   .nav--links li a.nav--link{ 
+      color:#fff;
+      letter-spacing: 3px;
+      font-weight:600;
+     
+    }
+    .nav--links li a.nav--link:hover{ 
+        text-decoration: underline;
+        font-weight:300;
+        transition:all .4s ease;
+
+    }
+  .menu-icon{ 
+    display:block;
+    cursor:pointer;
+    align-self:center;
+  }
+  
+  main{ 
+    gap:49px;
+  }
+  h1.banner--heading{ 
+    font-size:38px; 
+    margin-bottom:28px;
+  }
+  span.heading--color{ 
+    font-size:48px;
+  }
+  .banner--para{ 
+    font-size:18px;
+    margin-bottom:18px;
+  }
+  input{ 
+    width:280px;
+  }
+  button{ 
+    padding: 0 49px;
+  }
+  .placeToStays{ 
+    grid-template-columns: repeat(2, 1fr);
+  }
+  article{ 
+    height:auto;
+  }
+  .nft--wrap{ 
+    grid-template-columns: 47% 45%;
+    gap:8%;
+  }
+  .footer--links__wrap{ 
+    gap:60px;
+  }
+}
+
+
+
+@media screen and (max-width:820px){
+main{ 
+  flex-direction:column; 
+}
+.banner{ 
+  width:auto;
+  order:2;
+  align-self:start;
+}
+
+.banner--para{ 
+  font-size:16px;
+}
+.placeToStays{ 
+  grid-template-columns: 1fr;
+}
+.sponsor--wrap{ 
+  padding:10px 0;
+}
+
+.nft--wrap{
+  grid-template-columns: 1fr;
+}
+.footer-wrap{
+  gap:17px;
+  flex-direction: column;
+}
 }
