@@ -6,6 +6,7 @@ import ConnectWallet from './ConnectWallet';
 import Main from './Main';
 import Nfts from './Nfts';
 import Community from './Community';
+import PlaceToStay from './PlaceToStay';
 
 const Header = () => {
 
@@ -56,6 +57,8 @@ const Header = () => {
         
          <Routes>
            <Route exact path='/' element={<Main />}/>
+           <Route path='/placetostay' element={<PlaceToStay />}/>
+
             <Route path='/community' element={<Community />}/>
             <Route path='/nft' element={<Nfts />}/>
         </Routes> 

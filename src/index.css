@@ -178,11 +178,11 @@ section#sponsorBar{
   height:50px;
 }
 
-section#placeToStay{ 
+section#community{ 
   text-align:center;
   padding-top:39px;
 }
-.placeToStay--heading{ 
+.community--heading{ 
   margin-bottom:43px;
   font-family: 'Red Rose', sans-serif;
   font-weight: 700;
@@ -190,7 +190,7 @@ section#placeToStay{
   color: #000000;
 }
 
-.placeToStays{ 
+.communitys{ 
   display:grid; 
   grid-template-columns:repeat(4, 1fr);
   gap:24px;
@@ -446,10 +446,43 @@ h4.wallet-heading{
 }
 
 
-
-
-
-
+/* placetostay */
+.placetostay--links{ 
+    margin-bottom:77px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.placetostay--links li{ 
+  margin-right:35px;
+  align-self:center;
+}
+.placetostay--links li:last-child{
+  padding:14px; 
+  margin-right:0;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  border: 1px solid #B4B4B4;
+  border-radius: 8px;
+    
+}
+a.placetostay--link{ 
+  font-family: 'Red Rose',  sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #434343;
+}
+.option--location{ 
+  margin-left:14px;
+  font-size:18px;
+}
+.placetostays{ 
+  display:grid; 
+  grid-template-columns:repeat(4, 1fr);
+  gap:24px;
+  margin-bottom:53px;
+}
 
 
 
@@ -539,7 +572,7 @@ h4.wallet-heading{
   button{ 
     padding: 0 49px;
   }
-  .placeToStays{ 
+  .communitys{ 
     grid-template-columns: repeat(2, 1fr);
   }
   article{ 
@@ -552,6 +585,11 @@ h4.wallet-heading{
   .footer--links__wrap{ 
     gap:60px;
   }
+
+  .placetostays{
+     grid-template-columns: repeat(2, 1fr);
+    }
+  
 }
 
 
@@ -569,7 +607,7 @@ main{
 .banner--para{ 
   font-size:16px;
 }
-.placeToStays{ 
+.communitys{ 
   grid-template-columns: 1fr;
 }
 .sponsor--wrap{ 
@@ -582,5 +620,8 @@ main{
 .footer-wrap{
   gap:17px;
   flex-direction: column;
+}
+.placetostays{ 
+  grid-template-columns:1fr;
 }
 }
