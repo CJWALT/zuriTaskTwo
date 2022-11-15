@@ -1,4 +1,7 @@
 import React from 'react'
+import Nfts from './Nfts'
+import Community from './Community'
+import SponsorBar from './SponsorBar'
 
 const Main = () => {
   return (
@@ -20,6 +23,9 @@ const Main = () => {
           </div>
         </main>  
       </div>
+      <SponsorBar /> 
+        <Community />
+        <Nfts/>
     </>
   )
 }

@@ -1,26 +1,19 @@
 
 import Header from './components/Header';
-import Main from './components/Main';
-import SponsorBar from './components/SponsorBar';
-import PlaceToStay from './components/PlaceToStay';
-import Nfts from './components/Nfts';
 import Footer from './components/Footer';
-import ConnectWallet from './components/ConnectWallet'
+import {BrowserRouter as Router} from 'react-router-dom'
 import './index.css';
 
 function App() {
-  return (
+   return (
+
     <>
-    
+    <Router> 
+
       <Header />
-      <Main />
-      <SponsorBar /> 
-      <PlaceToStay />
-      <Nfts/>
       <Footer />
 
-      <ConnectWallet/> 
-      
+    </Router> 
     
     </>
   );

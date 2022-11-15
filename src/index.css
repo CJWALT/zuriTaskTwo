@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
 :root{ 
   --bg-gradient: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
   --bd-radius: 10px;
@@ -11,7 +11,9 @@
   padding:0; 
   box-sizing: border-box;
 }
-
+body{
+  position:relative;
+}
 .container{ 
   width:90%; 
   margin:0 auto;  
@@ -28,6 +30,7 @@ a{
   background:var(--bg-gradient);
   padding:15px 27px; 
   border-radius: var(--bd-radius);
+  cursor:pointer;
 }
 
 header{ 
@@ -42,6 +45,7 @@ header{
 
 .header--wrap__logo{ 
   width:233px;
+  align-self: center;
 }
 
 .nav--btn{
@@ -156,6 +160,7 @@ button{
   text-align: center;
   color: #FFFFFF;
   height:inherit;
+  cursor:pointer;
 }
 section#sponsorBar{ 
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
@@ -349,6 +354,120 @@ margin-bottom:15px;
   color: #F1F3F9;
   display:block;
 }
+
+
+section.connect-wallet{ 
+  position:absolute; 
+  background: rgba(64, 64, 64, 0.3);
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  top:0;
+  height:100vh;
+  width:100%;
+  visibility:hidden; 
+}
+section.show--connect__wallet{ 
+  visibility: visible;
+}
+.connect-wallet__wrap{ 
+  background:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  border-radius:16px;
+}
+.wallet--header{ 
+  display:flex; 
+  gap:330px; 
+  flex-direction: row;
+  padding:24px 32px;
+  border-bottom: 1px solid #CFD8DC;  
+}
+h4.wallet-heading{
+  font-family: 'Red Rose';
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+}
+
+.modal--close{ 
+  align-self: center;
+  font-size:24px;
+  font-weight: 200;
+  cursor:pointer;
+}
+.modal--para__wallet{ 
+  padding:32px;
+}
+.modal--para__wallet p{ 
+  font-family: 'Red Rose', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom:16px;
+}
+.wallet--wrap{ 
+  display:flex; 
+  flex-direction: column;
+  gap:10px;
+}
+.modal--options{ 
+  height:64px;
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #F8F9FA;
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  cursor:pointer;
+}
+.option--header{ 
+  display:flex;
+  flex-direction:row;
+  gap:16px; 
+}
+.wallet--wrap > div:nth-child(2){ 
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  background:#fff;
+}
+.option--header h4{ 
+  font-family: 'Sora', sans-serif;
+ font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  align-self:center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 
 @media screen and (max-width:1024px){

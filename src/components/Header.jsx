@@ -1,16 +1,25 @@
 // import React, { useEffect } from 'react'
-import React from 'react';
+import React, { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
-// import {Routes, Route} from 'react-router-dom'
-// import Main from './Main';
-// import PlaceToStay from './PlaceToStay';
+import { Link, Route, Routes } from 'react-router-dom';
+import ConnectWallet from './ConnectWallet';
+import Main from './Main';
+import Nfts from './Nfts';
+import Community from './Community';
+
 const Header = () => {
 
 
-    const [click, setClick] = React.useState(true);
+    const [click, setClick] = useState(true);
+
+    const [openModal, setOpenModal] = useState(false)
 
     const handleClick = () =>{
         setClick(!click);
+    }
+
+    const handleModalClick = () =>{
+        setOpenModal(!openModal)
     }
 
     return (
@@ -19,18 +28,18 @@ const Header = () => {
             <div className="container">
                 <div className="header--wrap">
                     <div className="header--wrap__logo">
-                        <a href="/"><img src="img/logo-header.png" alt="metabnb logo" /></a>
+                        <Link to="/"><img src="img/logo-header.png" alt="metabnb logo" /></Link>
                     </div>
                     <div  className={click ? "nav--btn" : "nav--btn show__btn"}>
                         <ul className="nav--links">
-                            <li><a href="/" className="nav--link">Home</a></li>
-                            <li><a href="/PlaceToStay" className="nav--link">Place to stay</a></li>
-                            <li><a href="/nft" className="nav--link">NFTs</a></li>
-                            <li><a href="/Community" className="nav--link">Community</a></li>
+                            <li><Link to="/" className="nav--link">Home</Link></li>
+                            <li><Link to="/placetostay" className="nav--link">Place to stay</Link></li>
+                            <li><Link to="/nft" className="nav--link">NFTs</Link></li>
+                            <li><Link to="/community" className="nav--link">Community</Link></li>
                         </ul>
                     
                         <div className="header--btn">
-                            <a href='/ConnectWallet' className='btn'>Connect Wallet</a>
+                            <button className='btn' onClick={handleModalClick}>Connect Wallet</button>
                         </div>
                     </div>
                     <div className="menu-icon" onClick={handleClick}> 
@@ -40,14 +49,17 @@ const Header = () => {
                 </div>
 
             </div>
+           
         </header>
 
+         <ConnectWallet toggle={openModal} closeClick={handleModalClick}/>
         
-        {/* <Routes>
-        <Route path='/' element={<Main />}/>
-        <Route path='/placeToStay' element={<PlaceToStay/>}/>
-      </Routes> */}
-     
+         <Routes>
+           <Route exact path='/' element={<Main />}/>
+            <Route path='/community' element={<Community />}/>
+            <Route path='/nft' element={<Nfts />}/>
+        </Routes> 
+    
     </>
 
   )
