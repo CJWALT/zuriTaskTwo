@@ -33,10 +33,10 @@ const Header = () => {
                     </div>
                     <div  className={click ? "nav--btn" : "nav--btn show__btn"}>
                         <ul className="nav--links">
-                            <li><Link to="/" className="nav--link">Home</Link></li>
-                            <li><Link to="/placetostay" className="nav--link">Place to stay</Link></li>
-                            <li><Link to="/nft" className="nav--link">NFTs</Link></li>
-                            <li><Link to="/community" className="nav--link">Community</Link></li>
+                            <li><Link to="/" className="nav--link" onClick={handleClick}>Home</Link></li>
+                            <li><Link to="/placetostay" className="nav--link" onClick={handleClick}>Place to stay</Link></li>
+                            <li><Link to="/nft" className="nav--link" onClick={handleClick}>NFTs</Link></li>
+                            <li><Link to="/community" className="nav--link" onClick={handleClick}>Community</Link></li>
                         </ul>
                     
                         <div className="header--btn">

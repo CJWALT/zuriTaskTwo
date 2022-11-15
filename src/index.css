@@ -33,6 +33,7 @@ a{
   cursor:pointer;
 }
 
+/* header */
 header{ 
   padding:43px 0;
   margin-bottom:30px;
@@ -48,6 +49,9 @@ header{
   align-self: center;
 }
 
+/* header end  */
+
+/* nav */
 .nav--btn{
   
   display:flex; 
@@ -73,10 +77,11 @@ ul li a.nav--link {
   color: #434343;
 }
 
+
 .header--btn{ 
   padding:14px 0;
 }
-
+/* nav end */
 a.btn{ 
   font-family: 'Red Rose', sans-serif;
   font-weight: 400;
@@ -87,7 +92,7 @@ a.btn{
   display:none;
 }
 
-
+/* main */
 main{ 
   display:flex; 
   flex-direction: row;
@@ -162,6 +167,10 @@ button{
   height:inherit;
   cursor:pointer;
 }
+/* main ends */
+
+
+/* sponsor */
 section#sponsorBar{ 
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
   
@@ -177,7 +186,9 @@ section#sponsorBar{
   width:222px; 
   height:50px;
 }
+/* sponsor ends */
 
+/* community */
 section#community{ 
   text-align:center;
   padding-top:39px;
@@ -196,9 +207,12 @@ section#community{
   gap:24px;
   margin-bottom:53px;
 }
+/* community ends */
 
+
+
+/* article */
 article{ 
-  /* width:292px;  */
   height:372px; 
   padding:16px;
   background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
@@ -254,6 +268,10 @@ article{
   color: #A02279 ;
   border-radius: 1px;
 }
+/* article ends */
+
+
+/* nft */
 #nft{ 
   padding:100px 0;
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
@@ -291,6 +309,7 @@ article{
   margin-bottom:55px;
 }
 
+/* nft ends */
 button.btn--nft{ 
   background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
   border-radius: 8px;
@@ -298,6 +317,8 @@ button.btn--nft{
   color:#A02279;
 }
 
+
+/* footer */
 footer{ 
   padding-top:58px;
   background:#1D1D1E;
@@ -354,8 +375,10 @@ margin-bottom:15px;
   color: #F1F3F9;
   display:block;
 }
+/* footer ends */
 
 
+/* connect wallet */
 section.connect-wallet{ 
   position:absolute; 
   background: rgba(64, 64, 64, 0.3);
@@ -445,6 +468,7 @@ h4.wallet-heading{
 
 }
 
+/* connect wallet ends */
 
 /* placetostay */
 .placetostay--links{ 
@@ -624,4 +648,31 @@ main{
 .placetostays{ 
   grid-template-columns:1fr;
 }
+}
+
+@media screen and (max-width:414px){
+
+ h1.banner--heading{ 
+  font-size:31px; 
+ }
+
+ span.heading--color{ 
+  font-size:33px;
+ }
+
+ .banner--para{ 
+    font-size:14px;
+ }
+
+ input{
+  width:213px;
+ }
+
+ p.nft--para{ 
+  font-size:15px;
+ }
+
+ .wallet--header{ 
+  gap:93px;
+ }
 }
