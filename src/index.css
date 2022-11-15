@@ -53,7 +53,6 @@ header{
 
 /* nav */
 .nav--btn{
-  
   display:flex; 
   justify-content: space-between;
   flex-direction:row;
@@ -244,7 +243,6 @@ article{
   font-family: 'Red Rose', sans-serif;
   font-weight: 700;
   font-size: 12px;
-
 }
 
 .distance--vacancy{ 
@@ -647,29 +645,30 @@ main{
 }
 .placetostays{ 
   grid-template-columns:1fr;
-}
+ }
+
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:375px){
 
  h1.banner--heading{ 
   font-size:31px; 
  }
 
  span.heading--color{ 
-  font-size:33px;
+  font-size:31px;
  }
 
  .banner--para{ 
-    font-size:14px;
+    font-size:12px;
  }
 
  input{
-  width:213px;
+  width:184px;
  }
 
  p.nft--para{ 
-  font-size:15px;
+  font-size:14px;
  }
 
  .wallet--header{ 
